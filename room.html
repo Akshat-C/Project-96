@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+<title>Kwitter Room</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        
+<link rel="stylesheet" type="text/css" href="room.css">
+<script src="room.js"></script>
+
+</head>
+
+<body onload="show_name()">
+
+<center>
+
+<div class="container-fluid">
+
+<div class="row content col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color: #521262;">
+
+<span class="glyphicon glyphicon-log-out btn btn-danger"  style="font-size: 28px; margin-left: -450px; margin-top: 10px;" onclick="logout()">   
+
+Logout
+
+</span>
+
+<h1 style="margin-top: 100px;" id="welcome_head">Welcome</h1>
+<br>
+<input id="new_room" class="form-control" type="text" placeholder="Enter Room Name" style="width: 450px; margin-left: -150px;">
+<br>
+<button onclick="newRoom()" class="btn btn-info" style="margin-left: -500px;">Add Room</button>
+
+</div>
+
+<div class="row content col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color: #6639A6;" id="trending">
+
+<h1>Trending Rooms</h1>
+<br>
+<h4>See all Trending Rooms Here</h4>
+<br>
+<div id="all_rooms" style="background-color: #3490DE;">
+
+
+
+</div>
+            
+</div>
+
+</div>
+
+</center>
+
+</body>
+
+</html
